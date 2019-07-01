@@ -22,6 +22,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LicenseWebpackPlugin = require('license-webpack-plugin').LicenseWebpackPlugin;
 const CompressionPlugin = require('compression-webpack-plugin');
+const fs = require('fs');
 
 const commonConfig = require('./webpack.common');
 
@@ -41,6 +42,9 @@ module.exports = merge(commonConfig, {
     devServer: {
         // Open the browser after server had been started
         open: true,
+        http2: true,
+
+        allowedHosts: ['localhost'],
 
         historyApiFallback: true,
 
@@ -66,7 +70,40 @@ module.exports = merge(commonConfig, {
 
         // Proxying URLs
         proxy: {
-            '/nifi-registry-api': 'http://localhost:18080'
+            '/nifi-registry-api': {
+                target: 'https://localhost:18433',
+                secure: false,
+                changeOrigin: true,
+
+                autoRewrite: true,
+                followRedirects: true,
+
+                auth: 'CN=sys_admin, OU=NIFI:tQoMD8rAX6K861n+82zfCym6Brnmagu4ja6jrbOTjM8',
+                // cookieDomainRewrite: 'localhost',
+                // onProxyReq: (proxyReq) => {
+                //     if (proxyReq.getHeader('origin')) {
+                //         console.log('Origin: ' + proxyReq.getHeader('origin'));
+                //         proxyReq.setHeader('origin', 'https://localhost:18433');
+                //     }
+                //     if (proxyReq.getHeader('Referer')) {
+                //         const referer = proxyReq.getHeader('Referer');
+                //         const newReferer = referer.replace('https://localhost:18081', 'https://localhost:18433');
+                //         console.log(`Old: ${referer}  --->  New: ${newReferer}`);
+                //         proxyReq.setHeader('Referer', newReferer);
+                //     }
+                // }
+            },
+            '/login': {
+                target: 'https://localhost:18433',
+                secure: false,
+                changeOrigin: true
+            },
+            changeOrigin: true
+        },
+
+        https: {
+            cert: fs.readFileSync('/Users/rfellows/tmp/toolkit/nifi-toolkit-1.9.2/target/nifi-cert.pem'),
+            key: fs.readFileSync('/Users/rfellows/tmp/toolkit/nifi-toolkit-1.9.2/target/nifi-key.key')
         },
 
         stats: 'verbose'

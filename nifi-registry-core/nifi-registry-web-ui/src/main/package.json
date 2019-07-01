@@ -30,6 +30,7 @@
     "webpack:development": "./node_modules/.bin/webpack --config webpack.dev.js",
     "webpack:production": "./node_modules/.bin/webpack --config webpack.prod.js",
     "watch": "npm run webpack:development && ./node_modules/.bin/webpack-dev-server --config webpack.dev.js",
+    "watch:secure": "npm run webpack:development && ./node_modules/.bin/webpack-dev-server --config webpack.dev.js --https",
     "lint-staged": "./node_modules/.bin/lint-staged"
   },
   "license": "Apache-2.0",
