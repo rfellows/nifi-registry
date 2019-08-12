@@ -46,7 +46,8 @@ NfPageNotFoundComponent.prototype = {
         this.dialogService.openConfirm({
             title: 'Page Not Found',
             acceptButton: 'Home',
-            acceptButtonColor: 'fds-warn'
+            acceptButtonColor: 'fds-warn',
+            width: '400px'
         }).afterClosed().subscribe(
             function (accept) {
                 if (accept) {

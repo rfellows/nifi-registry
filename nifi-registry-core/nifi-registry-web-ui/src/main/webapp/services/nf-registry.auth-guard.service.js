@@ -82,7 +82,8 @@ NfRegistryUsersAdministrationAuthGuard.prototype = {
                                 title: 'Access denied',
                                 message: 'Please contact your system administrator.',
                                 acceptButton: 'Ok',
-                                acceptButtonColor: 'fds-warn'
+                                acceptButtonColor: 'fds-warn',
+                                width: '400px'
                             });
                             self.router.navigateByUrl('/nifi-registry/explorer');
                         } else if (currentUser.resourcePermissions.tenants.canRead) {
@@ -92,7 +93,8 @@ NfRegistryUsersAdministrationAuthGuard.prototype = {
                                 title: 'Access denied',
                                 message: 'Please contact your system administrator.',
                                 acceptButton: 'Ok',
-                                acceptButtonColor: 'fds-warn'
+                                acceptButtonColor: 'fds-warn',
+                                width: '400px'
                             });
                             self.router.navigateByUrl('/nifi-registry/explorer');
                         }
@@ -102,7 +104,8 @@ NfRegistryUsersAdministrationAuthGuard.prototype = {
                             title: 'Not Applicable',
                             message: 'User administration is not configured for this registry.',
                             acceptButton: 'Ok',
-                            acceptButtonColor: 'fds-warn'
+                            acceptButtonColor: 'fds-warn',
+                            width: '400px'
                         });
                         self.router.navigateByUrl('/nifi-registry/administration/workflow');
                     } else {
@@ -111,7 +114,8 @@ NfRegistryUsersAdministrationAuthGuard.prototype = {
                             title: 'Access denied',
                             message: 'Please contact your system administrator.',
                             acceptButton: 'Ok',
-                            acceptButtonColor: 'fds-warn'
+                            acceptButtonColor: 'fds-warn',
+                            width: '400px'
                         });
                         self.router.navigateByUrl('/nifi-registry/explorer');
                     }
@@ -192,7 +196,8 @@ NfRegistryWorkflowsAdministrationAuthGuard.prototype = {
                                 title: 'Access denied',
                                 message: 'Please contact your system administrator.',
                                 acceptButton: 'Ok',
-                                acceptButtonColor: 'fds-warn'
+                                acceptButtonColor: 'fds-warn',
+                                width: '400px'
                             });
                             self.router.navigateByUrl('/nifi-registry/explorer');
                         } else if (currentUser.resourcePermissions.buckets.canRead) {
@@ -202,7 +207,8 @@ NfRegistryWorkflowsAdministrationAuthGuard.prototype = {
                                 title: 'Access denied',
                                 message: 'Please contact your system administrator.',
                                 acceptButton: 'Ok',
-                                acceptButtonColor: 'fds-warn'
+                                acceptButtonColor: 'fds-warn',
+                                width: '400px'
                             });
                             self.router.navigateByUrl('/nifi-registry/administration/users');
                         }
@@ -215,7 +221,8 @@ NfRegistryWorkflowsAdministrationAuthGuard.prototype = {
                             title: 'Access denied',
                             message: 'Please contact your system administrator.',
                             acceptButton: 'Ok',
-                            acceptButtonColor: 'fds-warn'
+                            acceptButtonColor: 'fds-warn',
+                            width: '400px'
                         });
                         self.router.navigateByUrl('/nifi-registry/explorer');
                     }

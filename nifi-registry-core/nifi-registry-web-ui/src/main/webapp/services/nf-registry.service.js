@@ -406,7 +406,8 @@ NfRegistryService.prototype = {
                 message: 'All versions of this ' + droplet.type.toLowerCase() + ' will be deleted.',
                 cancelButton: 'Cancel',
                 acceptButton: 'Delete',
-                acceptButtonColor: 'fds-warn'
+                acceptButtonColor: 'fds-warn',
+                width: '400px'
             }).afterClosed().subscribe(
                 function (accept) {
                     if (accept) {
@@ -540,7 +541,8 @@ NfRegistryService.prototype = {
                 message: 'All items stored in this bucket will be deleted as well.',
                 cancelButton: 'Cancel',
                 acceptButton: 'Delete',
-                acceptButtonColor: 'fds-warn'
+                acceptButtonColor: 'fds-warn',
+                width: '400px'
             }).afterClosed().subscribe(
                 function (accept) {
                     if (accept) {
@@ -767,7 +769,8 @@ NfRegistryService.prototype = {
             message: 'All versions of all flows of each selected bucket will be deleted.',
             cancelButton: 'Cancel',
             acceptButton: 'Delete',
-            acceptButtonColor: 'fds-warn'
+            acceptButtonColor: 'fds-warn',
+            width: '400px'
         }).afterClosed().subscribe(
             function (accept) {
                 if (accept) {
@@ -1014,7 +1017,8 @@ NfRegistryService.prototype = {
                 message: 'This user will lose all access to the registry.',
                 cancelButton: 'Cancel',
                 acceptButton: 'Delete',
-                acceptButtonColor: 'fds-warn'
+                acceptButtonColor: 'fds-warn',
+                width: '400px'
             }).afterClosed().subscribe(
                 function (accept) {
                     if (accept) {
@@ -1061,7 +1065,8 @@ NfRegistryService.prototype = {
                 message: 'All policies granted to this group will be deleted as well.',
                 cancelButton: 'Cancel',
                 acceptButton: 'Delete',
-                acceptButtonColor: 'fds-warn'
+                acceptButtonColor: 'fds-warn',
+                width: '400px'
             }).afterClosed().subscribe(
                 function (accept) {
                     if (accept) {
@@ -1104,7 +1109,8 @@ NfRegistryService.prototype = {
             message: 'The selected users will lose all access to the registry and all policies granted to the selected groups will be deleted.',
             cancelButton: 'Cancel',
             acceptButton: 'Delete',
-            acceptButtonColor: 'fds-warn'
+            acceptButtonColor: 'fds-warn',
+            width: '400px'
         }).afterClosed().subscribe(
             function (accept) {
                 if (accept) {

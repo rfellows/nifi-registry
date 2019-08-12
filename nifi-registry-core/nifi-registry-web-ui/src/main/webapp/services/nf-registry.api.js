@@ -67,7 +67,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -94,7 +95,8 @@ NfRegistryApi.prototype = {
                     title: 'Flow Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -147,7 +149,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -171,7 +174,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -195,7 +199,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -220,7 +225,8 @@ NfRegistryApi.prototype = {
                     title: 'Bucket Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -247,7 +253,8 @@ NfRegistryApi.prototype = {
                     title: 'Buckets Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -288,7 +295,8 @@ NfRegistryApi.prototype = {
                     title: 'User Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -341,7 +349,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -385,7 +394,8 @@ NfRegistryApi.prototype = {
                     title: 'Users Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -409,7 +419,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -432,7 +443,8 @@ NfRegistryApi.prototype = {
                     title: 'Groups Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -456,7 +468,8 @@ NfRegistryApi.prototype = {
                     title: 'Group Not Found',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -480,7 +493,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -510,7 +524,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -621,7 +636,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -653,7 +669,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: error.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of(error);
             })
@@ -695,7 +712,8 @@ NfRegistryApi.prototype = {
                     title: 'Error',
                     message: 'Please contact your System Administrator.',
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
                 return of('');
             })

@@ -456,7 +456,8 @@ NfRegistryManageUser.prototype = {
             data: {
                 user: this.nfRegistryService.user,
                 disableClose: true
-            }
+            },
+            width: '400px'
         }).afterClosed().subscribe(function () {
             self.nfRegistryApi.getUser(self.nfRegistryService.user.identifier)
                 .subscribe(function (response) {
@@ -598,7 +599,8 @@ NfRegistryManageUser.prototype = {
                     title: 'Error',
                     message: 'This user already exists. Please enter a different identity/user name.',
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
             }
         });

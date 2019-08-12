@@ -594,7 +594,8 @@ NfRegistryManageGroup.prototype = {
                     title: 'Error',
                     message: 'This group already exists. Please enter a different identity/group name.',
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
             }
         });

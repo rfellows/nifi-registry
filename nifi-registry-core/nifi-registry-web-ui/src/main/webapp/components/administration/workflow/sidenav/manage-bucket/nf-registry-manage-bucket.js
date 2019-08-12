@@ -200,7 +200,8 @@ NfRegistryManageBucket.prototype = {
             data: {
                 userOrGroup: userOrGroup,
                 disableClose: true
-            }
+            },
+            width: '400px'
         }).afterClosed().subscribe(function (dialogResult) {
             self.nfRegistryApi.getBucket(self.nfRegistryService.bucket.identifier)
                 .subscribe(function (response) {
@@ -336,7 +337,8 @@ NfRegistryManageBucket.prototype = {
             message: 'All permissions granted by this policy will be removed for this user/group.',
             cancelButton: 'Cancel',
             acceptButton: 'Delete',
-            acceptButtonColor: 'fds-warn'
+            acceptButtonColor: 'fds-warn',
+            width: '400px'
         }).afterClosed().subscribe(
             function (accept) {
                 if (accept) {
@@ -437,7 +439,8 @@ NfRegistryManageBucket.prototype = {
                     title: 'Error',
                     message: 'This bucket already exists. Please enter a different identity/bucket name.',
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
             } else if (response.status === 400) {
                 self.bucketname = self.nfRegistryService.bucket.name;
@@ -448,7 +451,8 @@ NfRegistryManageBucket.prototype = {
                     title: 'Error',
                     message: response.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
             }
         });
@@ -482,7 +486,8 @@ NfRegistryManageBucket.prototype = {
                     title: 'Error',
                     message: response.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
             }
         });
@@ -516,7 +521,8 @@ NfRegistryManageBucket.prototype = {
                     title: 'Error',
                     message: response.error,
                     acceptButton: 'Ok',
-                    acceptButtonColor: 'fds-warn'
+                    acceptButtonColor: 'fds-warn',
+                    width: '400px'
                 });
             }
         });
