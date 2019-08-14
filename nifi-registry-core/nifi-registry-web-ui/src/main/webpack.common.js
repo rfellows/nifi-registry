@@ -21,6 +21,8 @@ const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const webpackAlias = require('./webpack.alias');
 const loaders = require('./webpack.loader');
 
+// process.noDeprecation = true;
+
 module.exports = {
     // Deployment target
     target: 'web',
@@ -69,6 +71,8 @@ module.exports = {
     node: {
         console: true
     },
+
+    stats: 'errors-only',
 
     module: {
         rules: [
